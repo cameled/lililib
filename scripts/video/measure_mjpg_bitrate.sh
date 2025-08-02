@@ -1,5 +1,10 @@
 #!/bin/bash
 
+# v4l2-ctl exmaple usage:
+# v4l2-ctl --list-devices
+# v4l2-ctl --list-formats-ext -d /dev/video1
+# v4l2-ctl -d /dev/video1 --set-fmt-video=width=800,height=600,pixelformat=MJPG
+
 SELF_DIR="$(dirname "$(readlink -f "$0")")"
 
 
